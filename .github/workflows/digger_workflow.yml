@@ -10,6 +10,13 @@ on:
         required: true
       comment_id:
         required: true
+      job_type:
+        description: 'the type of the job (plan, apply, unlock)'
+        required: false
+      actor:
+        description: 'the actor username'
+        required: false
+      
 
 run-name: ${{inputs.id}} ${{inputs.jobType}} by ${{inputs.actor}}
 
