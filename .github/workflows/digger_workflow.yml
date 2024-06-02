@@ -18,7 +18,7 @@ on:
         required: false
       
 
-run-name: ${{inputs.id}} ${{inputs.jobType}} by ${{inputs.actor}}
+run-name: ${{inputs.id}} ${{inputs.job_type}} by ${{inputs.actor}}
 
 jobs:
   digger-job:
