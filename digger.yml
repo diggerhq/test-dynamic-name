@@ -1,3 +1,17 @@
 projects:
+  - name: base-dev-vpc
+    dir: .
+  - name: base-staging-vpc
+    dir: .
+  - name: base-preprod-vpc
+    dir: .
+  - name: base-prod-vpc
+    dir: .  
   - name: dev
+    dir: .
+  - name: staging
+    dir: .    
+  - name: preprod
+    dir: .    
+  - name: prod
     dir: .
