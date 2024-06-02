@@ -6,6 +6,9 @@ on:
       id:
         description: 'run identifier'
         required: false
+      batch_id:
+        description: 'batch identifier'
+        required: false
       job:
         required: true
       comment_id:
@@ -24,7 +27,7 @@ on:
         required: false
       
 
-run-name: '${{inputs.digger_command}} ${{inputs.project_name}} ID: ${{inputs.id}} By: ${{inputs.requested_by}} PR: ${{inputs.pr_number}}'
+run-name: '[${{inputs.batch_id}}] ${{inputs.digger_command}} ${{inputs.project_name}} By: ${{inputs.requested_by}} PR: ${{inputs.pr_number}}'
 
 jobs:
   digger-job:
