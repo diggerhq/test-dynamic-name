@@ -10,21 +10,12 @@ on:
         required: true
       comment_id:
         required: true
-      digger_command:
-        description: 'the type of the job (plan, apply, unlock)'
-        required: false
-      requested_by:
-        description: 'the actor username'
-        required: false
-      project_name:
-        description: 'project name'
-        required: false
-      pr_number:
-        description: 'pr number'
+      run_name:
+        description: 'the run name of the action'
         required: false
       
 
-run-name: '${{inputs.digger_command}} ${{inputs.project_name}} ID: ${{inputs.id}} By: ${{inputs.requested_by}} PR: ${{inputs.pr_number}}'
+run-name: '${{inputs.run_name}}'
 
 jobs:
   digger-job:
